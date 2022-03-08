@@ -101,7 +101,7 @@ const Footer = () => {
             </SocialIcon>
           </a>
           <a
-            href="https://drive.google.com/file/d/1MYJjg_PBRQtayK3O5QSwnV5_ggMn7_t1/view?usp=sharing
+            href="https://drive.google.com/file/d/1MYJjg_PBRQtayK3O5QSwnV5_ggMn7_t1/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
