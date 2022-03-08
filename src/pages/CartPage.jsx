@@ -144,6 +144,7 @@ const CartPage = () => {
   const cart = useSelector((state) => state.cart);
 
   const [stripeToken, setStripeToken] = useState(null);
+  let amount = 0;
   const history = useHistory();
   const onToken = (token) => {
     setStripeToken(token);
@@ -180,6 +181,10 @@ const CartPage = () => {
     };
     getOrders();
   }, [currentUser]);
+
+  amount = orders.map((order) => (amount += order.amount));
+  const totalSpent = amount.reduce((a, b) => a + b, 0);
+
   return (
     <Container>
       <Wrapper>
@@ -217,7 +222,7 @@ const CartPage = () => {
             {orders.length > 0 && (
               <Title>
                 ({orders.length}) orders are pending, total spent $
-                {` ${orders.map((order) => order.amount)}`}
+                {` ${totalSpent}`}
               </Title>
             )}
 

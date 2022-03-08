@@ -21,6 +21,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact>
           <HomePage />
+          {window.scrollTo(0, 0)}
         </Route>
         <Route path="/products/:category">
           <ProductsListPage />
