@@ -193,17 +193,19 @@ const CartPage = () => {
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
           {currentUser ? (
-            <StripeCheckout
-              name="Taha Store"
-              image="https://i.ibb.co/xXmRygz/mylogo-white.png"
-              description={`Your total is $${cart.totalPrice}`}
-              shippingAddress
-              amount={cart.totalPrice * 100}
-              token={onToken}
-              stripeKey={KEY}
-            >
-              <TopButton type="filled">CHECK OUT NOW!</TopButton>
-            </StripeCheckout>
+            cart.totalPrice > 0 && (
+              <StripeCheckout
+                name="Taha Store"
+                image="https://i.ibb.co/xXmRygz/mylogo-white.png"
+                description={`Your total is $${cart.totalPrice}`}
+                shippingAddress
+                amount={cart.totalPrice * 100}
+                token={onToken}
+                stripeKey={KEY}
+              >
+                <TopButton type="filled">CHECK OUT NOW!</TopButton>
+              </StripeCheckout>
+            )
           ) : (
             <Link to="/login">
               <TopButton type="filled">CHECK OUT NOW!</TopButton>
@@ -214,8 +216,8 @@ const CartPage = () => {
           <Info>
             {orders.length > 0 && (
               <Title>
-                ({orders.length}) orders are pending, total spent :
-                {orders.map((order) => order.amount)}
+                ({orders.length}) orders are pending, total spent $
+                {` ${orders.map((order) => order.amount)}`}
               </Title>
             )}
 
@@ -272,17 +274,19 @@ const CartPage = () => {
               <SummaryItemPrice>$ {cart.totalPrice}</SummaryItemPrice>
             </SummaryItem>
             {currentUser ? (
-              <StripeCheckout
-                name="Taha Store"
-                image="https://i.ibb.co/xXmRygz/mylogo-white.png"
-                description={`Your total is $${cart.totalPrice}`}
-                shippingAddress
-                amount={cart.totalPrice * 100}
-                token={onToken}
-                stripeKey={KEY}
-              >
-                <Button>CHECKOUT NOW</Button>
-              </StripeCheckout>
+              cart.totalPrice > 0 && (
+                <StripeCheckout
+                  name="Taha Store"
+                  image="https://i.ibb.co/xXmRygz/mylogo-white.png"
+                  description={`Your total is $${cart.totalPrice}`}
+                  shippingAddress
+                  amount={cart.totalPrice * 100}
+                  token={onToken}
+                  stripeKey={KEY}
+                >
+                  <Button>CHECKOUT NOW</Button>
+                </StripeCheckout>
+              )
             ) : (
               <Link to="/login">
                 <Button>CHECKOUT NOW</Button>
