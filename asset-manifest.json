@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/TahaStore/static/js/main.122da0b8.chunk.js",
+    "main.js.map": "/TahaStore/static/js/main.122da0b8.chunk.js.map",
+    "runtime-main.js": "/TahaStore/static/js/runtime-main.7a944407.js",
+    "runtime-main.js.map": "/TahaStore/static/js/runtime-main.7a944407.js.map",
+    "static/js/2.69005d79.chunk.js": "/TahaStore/static/js/2.69005d79.chunk.js",
+    "static/js/2.69005d79.chunk.js.map": "/TahaStore/static/js/2.69005d79.chunk.js.map",
+    "index.html": "/TahaStore/index.html",
+    "static/js/2.69005d79.chunk.js.LICENSE.txt": "/TahaStore/static/js/2.69005d79.chunk.js.LICENSE.txt",
+    "static/media/category_1.34f31543.jpg": "/TahaStore/static/media/category_1.34f31543.jpg",
+    "static/media/category_3.bee3c19b.jpg": "/TahaStore/static/media/category_3.bee3c19b.jpg",
+    "static/media/category_4.c58a7dda.jpg": "/TahaStore/static/media/category_4.c58a7dda.jpg",
+    "static/media/logo.eb9d9de7.png": "/TahaStore/static/media/logo.eb9d9de7.png",
+    "static/media/model_3.aa7bf65a.png": "/TahaStore/static/media/model_3.aa7bf65a.png",
+    "static/media/model_4.88b29a30.png": "/TahaStore/static/media/model_4.88b29a30.png",
+    "static/media/model_5.ed6f1ca3.png": "/TahaStore/static/media/model_5.ed6f1ca3.png",
+    "static/media/product_1.b0fa0a62.png": "/TahaStore/static/media/product_1.b0fa0a62.png",
+    "static/media/product_2.a788ded0.png": "/TahaStore/static/media/product_2.a788ded0.png",
+    "static/media/product_3.80748f83.png": "/TahaStore/static/media/product_3.80748f83.png",
+    "static/media/product_4.17b34361.png": "/TahaStore/static/media/product_4.17b34361.png",
+    "static/media/product_5.6d1de0ef.png": "/TahaStore/static/media/product_5.6d1de0ef.png",
+    "static/media/product_6.c1e977e4.png": "/TahaStore/static/media/product_6.c1e977e4.png",
+    "static/media/product_7.ffeb7905.png": "/TahaStore/static/media/product_7.ffeb7905.png",
+    "static/media/product_8.3d6ff8e5.png": "/TahaStore/static/media/product_8.3d6ff8e5.png",
+    "static/media/register1.c36a498e.jpg": "/TahaStore/static/media/register1.c36a498e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a944407.js",
+    "static/js/2.69005d79.chunk.js",
+    "static/js/main.122da0b8.chunk.js"
+  ]
+}
