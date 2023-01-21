@@ -71,7 +71,7 @@ const Success = () => {
           ? `Order has been created successfully. Your order number is ${orderId}`
           : `Successfull. Your order is being prepared...`}
       </Title>
-      <Link to="/home">
+      <Link to="/">
         <Button
           style={{ padding: 10, marginTop: 20 }}
           onClick={() => dispatch(emptyCart())}

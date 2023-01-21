@@ -110,7 +110,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Link style={{ textDecoration: "none", color: "black" }} to="/home">
+          <Link style={{ textDecoration: "none", color: "black" }} to="/">
             <Logo>
               Taha
               <Image src={_IMG} /> Store

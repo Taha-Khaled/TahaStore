@@ -20,7 +20,7 @@ const App = () => {
       <Navbar />
       <ScrollToTop>
         <Switch>
-          <Route path="/home" exact>
+          <Route path="/" exact>
             <HomePage />
             {window.scrollTo(0, 0)}
           </Route>
@@ -34,10 +34,10 @@ const App = () => {
             <AllProducts />
           </Route>
           <Route path="/login">
-            {user ? <Redirect to="/home" /> : <LoginPage />}
+            {user ? <Redirect to="/" /> : <LoginPage />}
           </Route>
           <Route path="/register">
-            {user ? <Redirect to="/home" /> : <RegisterPage />}
+            {user ? <Redirect to="/" /> : <RegisterPage />}
           </Route>
           <Route path="/cart">
             <CartPage />
