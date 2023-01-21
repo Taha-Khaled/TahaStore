@@ -20,7 +20,7 @@ const App = () => {
       <Navbar />
       <ScrollToTop>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/TahaStore" exact>
             <HomePage />
             {window.scrollTo(0, 0)}
           </Route>
@@ -34,10 +34,10 @@ const App = () => {
             <AllProducts />
           </Route>
           <Route path="/login">
-            {user ? <Redirect to="/" /> : <LoginPage />}
+            {user ? <Redirect to="/TahaStore" /> : <LoginPage />}
           </Route>
           <Route path="/register">
-            {user ? <Redirect to="/" /> : <RegisterPage />}
+            {user ? <Redirect to="/TahaStore" /> : <RegisterPage />}
           </Route>
           <Route path="/cart">
             <CartPage />
